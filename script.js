@@ -37,7 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "Yesterday is gone. Tomorrow has not yet come. We have only today",
         "Time is a created thing. To say 'I don't have time' is to say 'I don't want to'",
         "Time is the wisest counselor of all",
-        "The two most powerful warriors are patience and time"
+        "The two most powerful warriors are patience and time",
+        "Yesterday is history, today is a gift, tomorrow is a mystery.",
+        "Lost time is never found again.",
+        "Better three hours too soon than a minute too late.",
+        "Time waits for no one.",
+        "The trouble is, you think you have time.",
+        "Time you enjoy wasting is not wasted time.",
+        "They always say time changes things, but you actually have to change them yourself.",
+        "The key is in not spending time, but in investing it."
     ];
 
     // Change quote periodically
@@ -48,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             elements.quote.style.opacity = 0.7;
         }, 500);
-    }, 10000);
+    }, 100000);
 
     // Update time function
     function updateTime() {
