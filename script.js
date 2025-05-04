@@ -38,14 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
         "Time is a created thing. To say 'I don't have time' is to say 'I don't want to'",
         "Time is the wisest counselor of all",
         "The two most powerful warriors are patience and time",
-        "Yesterday is history, today is a gift, tomorrow is a mystery.",
-        "Lost time is never found again.",
-        "Better three hours too soon than a minute too late.",
-        "Time waits for no one.",
-        "The trouble is, you think you have time.",
-        "Time you enjoy wasting is not wasted time.",
-        "They always say time changes things, but you actually have to change them yourself.",
-        "The key is in not spending time, but in investing it."
+        "Yesterday is history, today is a gift, tomorrow is a mystery",
+        "Lost time is never found again",
+        "Better three hours too soon than a minute too late",
+        "Time waits for no one",
+        "The trouble is, you think you have time",
+        "Time you enjoy wasting is not wasted time",
+        "They always say time changes things, but you actually have to change them yourself",
+        "The key is in not spending time, but in investing it",
+        "Time is what we want most, but what we use worst",
+        "Time heals all wounds",
+        "Time is a great teacher, but unfortunately it kills all its students",
+        "Time is a valuable commodity, but it's also a valuable commodity",
+        
     ];
 
     // Change quote periodically
