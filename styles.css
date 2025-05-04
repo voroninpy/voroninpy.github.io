@@ -98,9 +98,13 @@ h3 {
 }
 
 p {
-    font-size: min(4vw, 4vh);
+    font-size: min(3.5vw, 3.5vh);
     font-family: monospace;
     transition: opacity 0.5s ease;
+}
+
+p#time-quote {
+    font-size: 1.5vh;
 }
 
 .quote {
@@ -142,6 +146,10 @@ p {
     
     p {
         font-size: 3.5vh;
+    }
+
+    p#time-quote {
+        font-size: 2vh;
     }
 }
 
