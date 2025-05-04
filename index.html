@@ -53,6 +53,26 @@
         </div>
     </div>
 
+    <!-- Mode overlay - hidden by default -->
+    <div id="mode-overlay" aria-live="assertive"></div>
+    
+    <!-- Development Mode Controls - hidden by default -->
+    <div id="dev-controls" class="dev-controls">
+        <h4>Development Mode</h4>
+        <div class="dev-control-row">
+            <label for="dev-date">Date:</label>
+            <input type="date" id="dev-date">
+        </div>
+        <div class="dev-control-row">
+            <label for="dev-time">Time:</label>
+            <input type="time" id="dev-time">
+        </div>
+        <button id="dev-apply">Apply Custom Time</button>
+        <button id="dev-reset">Reset to System Time</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 

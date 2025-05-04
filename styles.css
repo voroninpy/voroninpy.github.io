@@ -153,6 +153,27 @@ p#time-quote {
     }
 }
 
+/* Mode overlay styling */
+#mode-overlay {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: min(15vw, 15vh);
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .75s ease, visibility .75s ease;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 255, 0.3);
+}
+
 /* Background subtle animation */
 body {
     position: relative;
@@ -174,4 +195,68 @@ body::before {
     0% { opacity: 0.5; }
     50% { opacity: 0.8; }
     100% { opacity: 0.5; }
+}
+
+/* Development mode controls */
+.dev-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #4a9fff;
+    box-shadow: 0 0 15px rgba(74, 159, 255, 0.5);
+    z-index: 1000;
+    display: none; /* Hidden by default, shown by JavaScript when DEV_MODE_ENABLED is true */
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.dev-controls h4 {
+    color: #00f6ff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dev-control-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dev-controls label {
+    color: white;
+    flex: 1;
+}
+
+.dev-controls input {
+    background-color: #333;
+    border: 1px solid #4a9fff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    flex: 2;
+}
+
+.dev-controls button {
+    background: linear-gradient(90deg, #4a9fff, #00f6ff);
+    border: none;
+    color: black;
+    padding: 8px 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dev-controls button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(74, 159, 255, 0.7);
+}
+
+.dev-controls button:active {
+    transform: scale(0.98);
 } 
