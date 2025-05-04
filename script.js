@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateElement(element, value, progress) {
         element.value.textContent = value;
         element.progress.style.width = `${progress * 100}%`;
-        element.percentage.textContent = `${(progress * 100).toFixed(7)}%`;
+        element.percentage.textContent = `${(progress * 100).toFixed(8)}%`;
     }
 
     // Helper function to get month name
